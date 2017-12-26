@@ -1,5 +1,5 @@
 # RadarChartView
-Android实现的雷达图（Radar Chart），可用实现对比展示
+Android实现的雷达图（Radar Chart），可用于实现对比展示，可旋转
 
  1. 在布局文件中引入RadarChartView：
 
