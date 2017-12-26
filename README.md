@@ -60,3 +60,9 @@ Android实现的雷达图（Radar Chart），可用实现对比展示
   7. 对比图的效果图如下：
 
   ![image](https://github.com/luweibin3118/RadarChartView/blob/master/app/Screenshot_20171226-185135.png)
+
+  8. 如果给Config设置如下参数，可实现雷达图随手势滑动：
+
+                   setCanScroll(true) // true表示可以手势滑动
+
+                   setCanFling(true)  // true表示可以Fling
