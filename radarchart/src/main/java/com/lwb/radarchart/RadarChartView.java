@@ -1,4 +1,4 @@
-package com.example.radarchart;
+package com.lwb.radarchart;
 
 import android.content.Context;
 import android.graphics.Canvas;
