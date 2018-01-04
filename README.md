@@ -1,6 +1,23 @@
 # RadarChartView
 Android实现的雷达图（Radar Chart），可用于实现对比展示，可旋转
 
+项目添加依赖：
+project/build.gradle中添加：
+
+	allprojects {
+	    repositories {
+	        ...
+	        maven { url 'https://jitpack.io' }
+	    }
+	}
+
+project/app/build.gradle中添加：
+	
+	dependencies {
+        compile 'com.github.luweibin3118:RadarChartView:v1.0.2'
+    }
+
+
  1. 在布局文件中引入RadarChartView：
 
        <com.example.radarchart.RadarChartView
