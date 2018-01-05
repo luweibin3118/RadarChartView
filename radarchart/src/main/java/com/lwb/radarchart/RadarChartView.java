@@ -450,57 +450,57 @@ public class RadarChartView extends View implements GestureDetector.OnGestureLis
         /**
          * 图表节点大小
          */
-        private int pointRadius = 0;
+        private int pointRadius = 2;
 
         /**
          * 中间节点大小
          */
-        private int centerPointRadius = 0;
+        private int centerPointRadius = 5;
 
         /**
          * 图表在整个View中的占比
          */
-        private float chartWidget = 1;
+        private float chartWidget = 0.8f;
 
         /**
          * 图表填充颜色
          */
-        private int fillColor = 0xffffffff;
+        private int fillColor = 0xff268415;
 
         /**
          * 第二个对比图的填充颜色
          */
-        private int secondFillColor = 0xff888888;
+        private int secondFillColor = 0xffcd2626;
 
         /**
          * 图表网格背景颜色
          */
-        private int backgroundColor = 0xff000000;
+        private int backgroundColor = 0x88985615;
 
         /**
          * 每一个值的节点大小
          */
-        private int valuePointRadius = 0;
+        private int valuePointRadius = 5;
 
         /**
          * 每个值节点间的连线宽度
          */
-        private int valueLineSize = 0;
+        private int valueLineSize = 1;
 
         /**
          * 值的背景图透明度
          */
-        private float valueBackgroundAlpha = 0.5f;
+        private float valueBackgroundAlpha = 0.2f;
 
         /**
          * 属性值的字体大小
          */
-        private int textSize = 30;
+        private int textSize = 40;
 
         /**
          * 属性值的字体颜色
          */
-        private int textColor = 0xff666666;
+        private int textColor = 0x88985615;
 
         /**
          * 属性值位置比例，1.0f表示正在节点边缘位置
