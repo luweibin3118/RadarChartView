@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.administrator.radarchart.MainActivity">
 
-    <com.example.radarchart.RadarChartView
+    <com.lwb.radarchart.RadarChartView
         android:id="@+id/radar_chart_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

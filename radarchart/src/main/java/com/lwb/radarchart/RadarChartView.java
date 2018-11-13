@@ -398,20 +398,32 @@ public class RadarChartView extends View implements GestureDetector.OnGestureLis
 
     /**
      * 插入一条属性
-     * @param typeName      属性名称
-     * @param typeValue     属性值
-     * @param typeMaxValue  属性最大值
+     *
+     * @param typeName     属性名称
+     * @param typeValue    属性值
+     * @param typeMaxValue 属性最大值
      */
     public void insertType(String typeName, int typeValue, int typeMaxValue) {
         typeDataList.add(new TypeData(typeName, typeValue, typeMaxValue));
     }
 
+    public void clearData() {
+        typeDataList.clear();
+        secondTypeDataList.clear();
+    }
+
+    public void reDrawRadarChart() {
+        requestLayout();
+        invalidate();
+    }
+
     /**
      * 插入一条对比的属性
-     * @param typename          属性名称
-     * @param firstTypeValue    第一个比较对象的值
-     * @param secondTypeValue   第二个比较对象的值
-     * @param maxValue          该属性的最大值
+     *
+     * @param typename        属性名称
+     * @param firstTypeValue  第一个比较对象的值
+     * @param secondTypeValue 第二个比较对象的值
+     * @param maxValue        该属性的最大值
      */
     public void compareType(String typename, int firstTypeValue, int secondTypeValue, int maxValue) {
         typeDataList.add(new TypeData(typename, firstTypeValue, maxValue));
@@ -423,6 +435,7 @@ public class RadarChartView extends View implements GestureDetector.OnGestureLis
 
     /**
      * 设置雷达图的配置属性 {@link Config}
+     *
      * @param config
      */
     public void setConfig(Config config) {

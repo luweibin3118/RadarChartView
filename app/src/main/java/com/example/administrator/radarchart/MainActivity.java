@@ -3,7 +3,8 @@ package com.example.administrator.radarchart;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.example.radarchart.RadarChartView;
+import com.lwb.radarchart.RadarChartView;
+
 
 public class MainActivity extends Activity {
 
@@ -11,7 +12,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        RadarChartView radar_chart_view = findViewById(R.id.radar_chart_view);
+        final RadarChartView radar_chart_view = findViewById(R.id.radar_chart_view);
 
         radar_chart_view.compareType("法术", 700, 820, 1000);
         radar_chart_view.compareType("攻击", 900, 750, 1000);
@@ -49,5 +50,21 @@ public class MainActivity extends Activity {
                 .setCompareName("后裔","狄仁杰")
                 .setPointRadius(2);
         radar_chart_view.setConfig(config);
+
+        radar_chart_view.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                radar_chart_view.clearData();
+                radar_chart_view.compareType("暴击", 80, 70, 100);
+                radar_chart_view.compareType("魔抗", 750, 800, 1000);
+                radar_chart_view.compareType("移速", 800, 750, 1000);
+                radar_chart_view.compareType("攻击", 900, 750, 1000);
+                radar_chart_view.compareType("法术", 700, 820, 1000);
+                radar_chart_view.compareType("天赋", 800, 900, 1000);
+                radar_chart_view.compareType("金钱", 9000, 9500, 10000);
+                radar_chart_view.compareType("物抗", 550, 600, 1000);
+                radar_chart_view.reDrawRadarChart();
+            }
+        },2000);
     }
 }
